@@ -5,8 +5,53 @@
     <title>JavaScript Quizboard</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Supermercado+One" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+
+          <div class="jumbotron ">
+            <h1>JAVASCRIPT TEST</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <h2>Please fill in your details below.</h2>
+            <form id="user-details">
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input id="first-name" type="text" class="form-control">
+                <label for="second-name">Surname</label>
+                <input id="surname" type="text" class="form-control">
+                <label for="age">Age</label>
+                <input id="age" type="number" class="form-control">
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="gender" value="female">
+                  Female
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="gender" value="male">
+                  Male
+                </label>
+              </div>
+              <button type="submit" class="btn">OK</button>
+            </form>
+          </div>
+          <div class="col-md-6 col-sm-6" >
+            <p>
+              <span id="name-print">, click the <strong>start</strong> button below to begin.</span>
+            </p>
+            <img src="images/luckwish.jpeg" alt="Good Luck!" width="450">
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn">START</button>
+        </div>
+        
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
