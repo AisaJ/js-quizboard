@@ -2,3 +2,12 @@
   /*font-family: 'Supermercado One', cursive;*/
   font-family: 'Overpass', sans-serif;
 }
+.direction-msg{
+  display: none;
+}
+.alert-msg{
+  display: none;
+}
+#start{
+  display: none;
+}

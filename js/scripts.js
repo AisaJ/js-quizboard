@@ -6,6 +6,14 @@ $(document).ready(function(){
     var age = $("age").val();
     var gender = $("input:radio[name=gender]:checked").val();
 
+    if(firstName === "" || surname === "" || age === "" || gender ===""){
+      $(".alert-msg").show();
+    }else{
+      $(".direction-msg").show();
+      $("#name-print").text(firstName);
+      $("#start").show();
+    }
+
     event.preventDefault();
   });
 });
