@@ -6,6 +6,7 @@ $(document).ready(function(){
     var age = $("age").val();
     var gender = $("input:radio[name=gender]:checked").val();
 
+    //UI logic
     if(firstName === "" || surname === "" || age === "" || gender ===""){
       $(".alert-msg").show();
     }else{
@@ -17,10 +18,11 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
+  //UI logic
   function showQuiz(){
     $("#questionnaires").show();
   }
-
+  //business logic
   var answers = ["method","typeof","true","selector","text()"];
   var qstnScore = 15;
 
@@ -32,6 +34,7 @@ $(document).ready(function(){
     var question5 = $("input:radio[name=question5]:checked").val();
     var marks= 0;
 
+    if (q)
 
 
   })
