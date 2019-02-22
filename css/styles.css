@@ -11,6 +11,9 @@
 #start{
   display: none;
 }
-/*#questionnaires{
+#quiz-box{
   display: none;
-}*/
+}
+#scoreDisplay{
+  display: none;
+}

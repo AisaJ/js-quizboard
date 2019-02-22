@@ -10,6 +10,7 @@ $(document).ready(function(){
     if(firstName === "" || surname === "" || age === "" || gender ===""){
       $(".alert-msg").show();
     }else{
+      $(".alert-msg").hide();
       $(".direction-msg").show();
       $("#name-print").text(firstName);
       $("#start").show();
@@ -18,24 +19,59 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
-  //UI logic
-  function showQuiz(){
-    $("#questionnaires").show();
-  }
-  //business logic
-  var answers = ["method","typeof","true","selector","text()"];
-  var qstnScore = 15;
+  //UI logics
+  $("#start").click(function(){
+    $("#quiz-box").show();
+  });
 
-  $("form#questionnaires").submit(function(){
+  //business logic
+  var answers = ["method","typeof()","true","selector","text()"];
+
+  $(".questionnaires").submit(function(event){
     var question1 = $("input:radio[name=question1]:checked").val();
     var question2 = $("input:radio[name=question2]:checked").val();
     var question3 = $("input:radio[name=question3]:checked").val();
     var question4 = $("input:radio[name=question4]:checked").val();
     var question5 = $("input:radio[name=question5]:checked").val();
-    var marks= 0;
+    var marks = 0;
+    var percentage = 0;
+    /*var marks = parseInt()*/
 
-    if (q)
+    if (question1 === answers[0]){
+      marks += 1;
+    }
+    else{
+      marks += 0;
+    }
+    if (question2 === answers[1]){
+      marks += 1;
+    }
+    else{
+      marks += 0;
+    }
+    if (question3 === answers[2]){
+      marks += 1;
+    }
+    else{
+      marks += 0;
+    }
+    if (question4 === answers[3]){
+      marks += 1;
+    }
+    else{
+      marks += 0;
+    }
+    if (question5 === answers[4]){
+      marks += 1;
+    }
+    else{
+      marks += 0;
+    }
 
-
-  })
+    percentage = marks / 5 * 100;
+    //UI logic
+     $("#yourMark").text(marks + " /5 which is " + percentage);
+     $("#scoreDisplay").show();
+    event.preventDefault();
+  });
 });
