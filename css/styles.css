@@ -44,7 +44,7 @@
   color: #daa520;
 }
 .card-body{
-  padding-left: 2em;
+  padding: 1.5em;
 }
 .card-body h3{
   background-color: #daa520;
@@ -85,4 +85,16 @@
 #results{
   font-family: 'Supermercado One', cursive;
   color: #660000;
+}
+.commentClick{
+  text-decoration: underline;
+}
+.commentClick:hover{
+  cursor: pointer;
+}
+#remark{
+  display: none;
+  font-family: 'Supermercado One', cursive;
+  color: #660000;
+  font-size: 1.5em;
 }

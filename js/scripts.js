@@ -13,7 +13,7 @@ $(document).ready(function(){
     }else{
       $(".alert-msg").hide();
       $(".direction-msg").show();
-      $("#name-print").text(firstName);
+      $(".name-print").text(firstName);
       $("#start").show();
     }
 
@@ -75,5 +75,11 @@ $(document).ready(function(){
      $("#yourMark").text(marks + " /5: " + percent);
      $("#scoreDisplay").show();
     event.preventDefault();
+  });
+
+  $(".commentClick").click(function(){
+    $("#results").toggle();
+    $("#remark").toggle();
+    $(".name-print").text(firstName);
   });
 });
