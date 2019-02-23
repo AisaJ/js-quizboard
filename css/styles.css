@@ -12,6 +12,10 @@
 .jumbotron h1{
   font-size: 2.5em;
 }
+#icon{
+  float: left;
+  padding: 0.2em;
+}
 .direction-msg{
   display: none;
 }
@@ -30,12 +34,22 @@
 }
 #scoreDisplay{
   display: none;
+  text-align: center;
+  font-size: 1.5em;
 }
 .card-header{
   background-color: #660000;
   border: 1px solid gray;
   padding: 1em;
   color: #daa520;
+}
+.card-body{
+  padding-left: 2em;
+}
+.card-body h3{
+  background-color: #daa520;
+  font-size: 2em;
+  padding: 0.2em;
 }
 .card-footer{
   background-color: #660000;
@@ -45,10 +59,6 @@
 }
 #quiz-box h2{
   text-align: center;
-}
-#scoreDisplay{
-  text-align: center;
-  font-size: 2em;
 }
 .btn{
   padding: 1em 1.5em 1em 1.5em;
@@ -71,4 +81,8 @@
   color: #660000;
   background-color: #daa520;
   border-color: #660000;
+}
+#results{
+  font-family: 'Supermercado One', cursive;
+  color: #660000;
 }

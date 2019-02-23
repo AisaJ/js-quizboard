@@ -69,9 +69,10 @@ $(document).ready(function(){
       marks += 0;
     }
 
-    percentage = marks / 5 * 100;
+    var percent = marks / 5 * 100;
+
     //UI logic
-     $("#yourMark").text(marks + " /5 which is " + percentage);
+     $("#yourMark").text(marks + " /5: " + percent);
      $("#scoreDisplay").show();
     event.preventDefault();
   });

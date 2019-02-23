@@ -10,8 +10,9 @@
   <body>
     <div class="container">
 
-          <div class="jumbotron ">
-            <h1><strong>JAVASCRIPT TEST</strong></h1>
+        <div class="jumbotron ">
+            <img src="images/jsIcon.png" alt="JS Icon" width="120" id="icon">
+            <h1><strong>COMPUTER TEST</strong></h1>
         </div>
         <div class="row">
           <div class="col-md-6 col-sm-6">
@@ -55,146 +56,158 @@
           </div>
         </div>
 
-        <div class="card" id="quiz-box">
-          <div class="card-header">
-            <h2>DO THE QUIZ - (ANSWER ALL QUESTIONS)</h2>
-          </div>
-          <div class="card-body">
-            <div class="row">
-              <form class="questionnaires">
-                <p>
-                  1. Which one among the list is NOT a JavaScript datatype?
-                </p>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question1" value="string">
-                    String
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question1" value="boolean">
-                    Boolean
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    <input type="radio" name="question1" value="undefined" required>
-                    Undefined
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question1" value="method">
-                    Method
-                  </label>
-                </div>
-                <p>
-                  2. Which operator, do you use to check the data type used
-                </p>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question2" value="val()" required>
-                    val()
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question2" value="toString()">
-                    toString()
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question2" value="typeof()">
-                    typeof()
-                  </label>
-                </div>
-                <p>
-                  3. Variables declared within a function without 'var' initialization are automatically interpreted as global variables in JS?
-                </p>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question3" value="true" required>
-                    True
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question3" value="false">
-                    False
-                  </label>
-                </div>
-                <p>
-                  4. Which of the following is NOT among the form input types?
-                </p>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question4" value="select">
-                    Select boxes
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question4" value="radiobutton">
-                    Radio button
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question4" value="check" required>
-                    Check boxes
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question4" value="selector">
-                    Selector boxes
-                  </label>
-                </div>
-                <p>
-                  5. What method in jquery is used to print to the html document an updated content, everytime the value changes.
-                </p>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question5" value="append()">
-                    Append()
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question5" value="prepend()">
-                    Prepend()
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question5" value="text()">
-                    Text()
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="question5" value="val()" required>
-                    Val()
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
+        <!--quiz form code-->
+        <div id="quiz-box">
+          <div class="row">
+            <div class="col-md-8">
+               <div class="card">
+                 <div class="card-header">
+                   <h2>JAVASCRIPT QUIZ - (ANSWER ALL QUESTIONS)</h2>
+                 </div>
+                 <div class="card-body">
+                   <div class="row">
+                     <form class="questionnaires">
+                       <p>
+                         1. Which one among the list is NOT a JavaScript datatype?
+                       </p>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question1" value="string">
+                           String
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question1" value="boolean">
+                           Boolean
+                         </label>
+                       </div>
+                       <div>
+                         <label>
+                           <input type="radio" name="question1" value="undefined" required>
+                           Undefined
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question1" value="method">
+                           Method
+                         </label>
+                       </div>
+                       <p>
+                         2. Which operator, do you use to check the data type used
+                       </p>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question2" value="val()" required>
+                           val()
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question2" value="toString()">
+                           toString()
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question2" value="typeof()">
+                           typeof()
+                         </label>
+                       </div>
+                       <p>
+                         3. Variables declared within a function without 'var' initialization are automatically interpreted as global variables in JS?
+                       </p>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question3" value="true" required>
+                           True
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question3" value="false">
+                           False
+                         </label>
+                       </div>
+                       <p>
+                         4. Which of the following is NOT among the form input types?
+                       </p>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question4" value="select">
+                           Select boxes
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question4" value="radiobutton">
+                           Radio button
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question4" value="check" required>
+                           Check boxes
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question4" value="selector">
+                           Selector boxes
+                         </label>
+                       </div>
+                       <p>
+                         5. What method in jquery is used to print to the html document an updated content, everytime the value changes.
+                       </p>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question5" value="append()">
+                           Append()
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question5" value="prepend()">
+                           Prepend()
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question5" value="text()">
+                           Text()
+                         </label>
+                       </div>
+                       <div class="radio">
+                         <label>
+                           <input type="radio" name="question5" value="val()" required>
+                           Val()
+                         </label>
+                       </div>
+                       <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
+                       <a href="#results"><button type="button" class="btn btn-outline-primary">View Results</button></a>
+                     </form>
+                   </div>
+                 </div>
+             </div>
+           </div>
 
-              </form>
-            </div>
-          </div>
-          <div class="card-footer">
-            <h3>Your Results</h3>
-            <div id="scoreDisplay">
-              <p>
-                You scored <span id="yourMark"></span>%
-              </p>
-            </div>
+           <div class="col-md-4">
+             <div class="card" id="results">
+               <div class="card-body">
+                 <h3>Your Results</h3>
+                 <div id="scoreDisplay">
+                   <p>
+                     "You scored <span id="yourMark"></span>%"
+                   </p>
+                   <a>Review</a>
+                 </div>
+               </div>
+             </div>
+           </div>
           </div>
         </div>
-
-      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
