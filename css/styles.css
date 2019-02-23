@@ -5,7 +5,7 @@
 }
 .jumbotron{
   background-color: #660000;
-  color: white;
+  color: #daa520;
   margin-top: 0.5em;
   text-align: center;
 }
@@ -20,6 +20,10 @@
 }
 #start{
   display: none;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  padding: 1em 3em 1em 3em;
+  font-size: 1em;
 }
 #quiz-box{
   display: none;
@@ -31,18 +35,40 @@
   background-color: #660000;
   border: 1px solid gray;
   padding: 1em;
-  color: white;
+  color: #daa520;
 }
 .card-footer{
   background-color: #660000;
   border: 1px solid gray;
   padding: 1em;
-  color: white;
+  color: #daa520;
 }
-h2{
+#quiz-box h2{
   text-align: center;
 }
 #scoreDisplay{
   text-align: center;
   font-size: 2em;
+}
+.btn{
+  padding: 1em 1.5em 1em 1.5em;
+}
+.btn-outline-primary{
+  color: #660000;
+  border-color: #660000;
+}
+.btn-outline-primary:hover{
+  background-color: #660000;
+  color: #daa520;
+  border-color: #660000;
+}
+.btn-primary{
+  color: #660000;
+  background-color: #daa520;
+  border-color: #660000;
+}
+.btn-primary:hover{
+  color: #660000;
+  background-color: #daa520;
+  border-color: #660000;
 }

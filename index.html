@@ -15,7 +15,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-sm-6">
-            <h2>Please fill in your details below.</h2>
+            <h2><strong>Please fill in your details below.</strong></h2>
             <form id="user-details">
               <div class="form-group">
                 <label for="first-name">First name</label>
@@ -36,7 +36,7 @@
                   Male
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary">OK</button>
+              <button type="submit" class="btn btn-outline-primary">OK</button>
             </form>
           </div>
           <div class="col-md-6 col-sm-6" >
@@ -44,13 +44,15 @@
               Please complete the <strong>'User details form'</strong> on the left to proceed!
             </p>
             <p class="direction-msg">
-              Hello <span id="name-print"></span>, click the <strong>start</strong> button below to begin.
+              Hello <strong><span id="name-print"></span></strong>, click the <strong>start</strong> button below to begin.
             </p>
             <img src="images/luckwish.jpeg" alt="Good Luck!" width="480">
           </div>
         </div>
         <div class="row">
-          <a href="#quiz-box"><button type="button" class="btn btn-primary" id="start">START</button></a>
+          <div class="col text-center">
+            <a href="#quiz-box"><button type="button" class="btn btn-primary" id="start">START</button></a>
+          </div>
         </div>
 
         <div class="card" id="quiz-box">
@@ -177,12 +179,13 @@
                     Val()
                   </label>
                 </div>
-                <button type="submit" class="btn btn-primary">SUBMIT</button>
+                <button type="submit" class="btn btn-outline-primary">SUBMIT</button>
 
               </form>
             </div>
           </div>
           <div class="card-footer">
+            <h3>Your Results</h3>
             <div id="scoreDisplay">
               <p>
                 You scored <span id="yourMark"></span>%
