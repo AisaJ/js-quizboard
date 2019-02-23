@@ -1,7 +1,7 @@
 //business logic
 $(document).ready(function(){
   $("form#user-details").submit(function(event){
-    
+
     var firstName = $("#first-name").val();
     var surname = $("surname").val();
     var age = $("age").val();
@@ -23,6 +23,7 @@ $(document).ready(function(){
   //UI logics
   $("#start").click(function(){
     $("#quiz-box").show();
+    $("#start").fadeOut(3000);
   });
 
   //business logic
