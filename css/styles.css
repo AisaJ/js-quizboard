@@ -72,6 +72,9 @@
   color: #daa520;
   border-color: #660000;
 }
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem #660000;
+}
 .btn-primary{
   color: #660000;
   background-color: #daa520;
@@ -81,6 +84,9 @@
   color: #660000;
   background-color: #daa520;
   border-color: #660000;
+}
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem #daa520;
 }
 #results{
   font-family: 'Supermercado One', cursive;
