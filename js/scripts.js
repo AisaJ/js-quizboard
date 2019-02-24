@@ -8,7 +8,7 @@ $(document).ready(function(){
     var gender = $("input:radio[name=gender]:checked").val();
 
     //UI logic
-    if(firstName === "" || surname === "" || age === "" || gender === ""){
+    if(firstName === "" || surname === "" || age === "" || !gender){
       $(".alert-msg").show();
     }else{
       $(".alert-msg").hide();
