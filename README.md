@@ -29,9 +29,9 @@ The application is built on:
 For any queries and suggestions on how I could improve on the application, please contact the support team via **Tel No: +254 707 306910** or **Email: aisajemila@gmail.com**
 Any comment on what you liked or feel should have been placed better is appreciated. Tips and other code tricks are welcomed as well.
 ### License
-*MIT License
+*MIT License*
 
-Copyright (c) [2019] [AISA JEMILA]
+*Copyright (c) [2019] [AISA JEMILA]*
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +43,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
