@@ -28,6 +28,7 @@ $(document).ready(function(){
 
   //business logic
   var answers = ["method","typeof()","true","selector","text()"];
+  var marks = 0;
 
   $(".questionnaires").submit(function(event){
     var question1 = $("input:radio[name=question1]:checked").val();
@@ -35,8 +36,7 @@ $(document).ready(function(){
     var question3 = $("input:radio[name=question3]:checked").val();
     var question4 = $("input:radio[name=question4]:checked").val();
     var question5 = $("input:radio[name=question5]:checked").val();
-    var marks = 0;
-    var percentage = 0;
+
     /*var marks = parseInt()*/
 
     if (question1 === answers[0]){
@@ -75,12 +75,23 @@ $(document).ready(function(){
     //UI logic
      $("#yourMark").text(marks + " /5: " + percent);
      $("#scoreDisplay").show();
+
     event.preventDefault();
   });
 
   $(".commentClick").click(function(){
-    $("#results").toggle();
-    $("#remark").toggle();
+    var percent = marks / 5 * 100;
+    if(percent>79){
+      $("#results").toggle();
+      $("#remark1").toggle();
+    }else if (percent>49 && percent<80){
+      $("#results").toggle();
+      $("#remark2").toggle();
+    }else {
+      $("#results").toggle();
+      $("#remark3").toggle();
+      $("#resetForm").fadeIn(3000);
+    }
     $(".name-print").text(firstName);
   });
 });
