@@ -1,4 +1,4 @@
-//business logic
+//UI logic
 $(document).ready(function(){
   $("form#user-details").submit(function(event){
 
@@ -7,7 +7,6 @@ $(document).ready(function(){
     var age = $("#age").val();
     var gender = $("input:radio[name=gender]:checked").val();
 
-    //UI logic
     if(firstName === "" || surname === "" || age === "" || !gender){
       $(".alert-msg").show();
     }else{
@@ -20,13 +19,12 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
-  //UI logics
   $("#start").click(function(){
     $("#quiz-box").show();
     $("#start").fadeOut(3000);
   });
 
-  //business logic
+//business logic
   var answers = ["method","typeof()","true","selector","text()"];
   var marks = 0;
 
@@ -72,7 +70,7 @@ $(document).ready(function(){
 
     var percent = marks / 5 * 100;
 
-    //UI logic
+
      $("#yourMark").text(marks + " /5: " + percent);
      $("#scoreDisplay").show();
 
