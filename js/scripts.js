@@ -73,7 +73,7 @@ $(document).ready(function(){
 
      $("#yourMark").text(marks + " /5: " + percent);
      $("#scoreDisplay").show();
-
+     $("#submit").hide();
     event.preventDefault();
   });
 
