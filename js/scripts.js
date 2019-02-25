@@ -89,6 +89,7 @@ $(document).ready(function(){
       $("#results").toggle();
       $("#remark3").toggle();
       $("#resetForm").fadeIn(3000);
+      $("#submit").show();
     }
     $(".name-print").text(firstName);
   });
