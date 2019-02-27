@@ -118,3 +118,6 @@ footer{
   color: #daa520;
   text-align: center;
 }
+.card-img{
+  width: auto;
+}
